@@ -124,3 +124,26 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+
+
+
+.topimageabout {
+    display: flex;
+    justify-content: center;
+}
+
+.topimageinsidetheabout {
+    width: 40rem;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+.bottomthing {
+    display: flex;
+    justify-content: space-around;
+}
+
+.randomguyLOL {
+    width: 15rem;
+    border-radius: 50%;
+}
