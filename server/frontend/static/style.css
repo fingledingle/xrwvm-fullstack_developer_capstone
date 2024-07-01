@@ -109,12 +109,6 @@ img{
   vertical-align: middle;
 }
 
-.small_header{
-  font: 30px sans-serif;
-  color:black;
-  margin: .5cm;
-}
-
 .img_icon {
   align-self: center;
     width:40px;
@@ -123,27 +117,4 @@ img{
     border-radius:50px;
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
-}
-
-
-
-.topimageabout {
-    display: flex;
-    justify-content: center;
-}
-
-.topimageinsidetheabout {
-    width: 40rem;
-    padding: 1rem;
-    border-radius: 50px;
-}
-
-.bottomthing {
-    display: flex;
-    justify-content: space-around;
-}
-
-.randomguyLOL {
-    width: 15rem;
-    border-radius: 50%;
 }

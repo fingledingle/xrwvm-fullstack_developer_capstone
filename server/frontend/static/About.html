@@ -1,7 +1,10 @@
+{% load static %}
+<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <!-- Link the style sheet here #Names of my CSS files are style.css and bootstrap.min.css. -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
@@ -28,45 +31,38 @@
   
     <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
       <div class="banner" name="about-header">
-        <h1>About Us</h1>
-            Welcome to Best Cars dealership, home to the best cars in North America.
-            We deal in sale of domestic and imported cars at reasonable prices.
+      <!-- Insert header information here -->
+      <h1>About Us</h1>
+      <p>Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.</p>
       </div>
       <div style="display: flex;flex-direction: row; margin:auto">
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="{% static 'Karm.png' %}" alt="Card image">
         <div class="card-body">
-          <p class="title">jeff</p>
-          <p>jeff Title</p>
-          <p class="card-text">hello my name is jeff and im awesome sauce (jeff is not my name)</p>
-          <p>jeff@jeff.jeff</p>
+          <p class="title">Karm Abati</p>
+          <p>CEO</p>
+          <p class="card-text">Karm Abati is the CEO of Best Cars dealership. He has over 10 years of experience in the automotive industry</p>
+          <p>karmabati@example.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="{% static 'K.Abati.Up.png' %}" alt="Card image">
         <div class="card-body">
-          <p class="title">jeffrey</p>
-          <p>jeff Title</p>
-          <p class="card-text">Hello my name is jeffrey and yea im jeffrey</p>
-          <p>jeffrey@jeffrey.jeffrey</p>
+          <p class="title">Styner Abati</p>
+          <p>COO</p>
+          <p class="card-text">Styner Abati is the COO of Best Cars dealership. She has a strong background in operations and logistics.</p>
+          <p>stynerabati@example.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="{% static 'Mary.png' %}" alt="Card image">
         <div class="card-body">
-          <p class="title">jefferson</p>
-          <p>jefferson Title</p>
-          <p class="card-text">hello im jefferson and its nice to meet you sir</p>
-          <p>jefferson@jefferson.jefferson
-
-
-
-
-
-            
-          </p>
+          <p class="title">Mary Abati</p>
+          <p>CFO</p>
+          <p class="card-text">Mary Abati is the CFO of Best Cars dealership. She has a strong background in operations and logistics.</p>
+          <p>maryabati@example.com</p>
         </div>
       </div>
     </div>
