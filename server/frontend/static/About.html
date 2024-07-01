@@ -1,13 +1,10 @@
-{% load static %}
-<!DOCTYPE html>
 <html>
 <head>
-  <!-- Link the style sheet here #Names of my CSS files are style.css and bootstrap.min.css. -->
-  <link rel="stylesheet" href="/static/style.css">
-  <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:mediumspringgreen; height: 1in;">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,44 +28,41 @@
   
     <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
       <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      <h1>About Us</h1>
-      <p>Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.</p>
+        <h1>About Us</h1>
+        Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.
       </div>
       <div style="display: flex;flex-direction: row; margin:auto">
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="{% static 'Karm.png' %}" alt="Card image">
+        <img class="card-img-top" src="/static/person1.png" alt="Card image">
         <div class="card-body">
-          <p class="title">Karm Abati</p>
-          <p>CEO</p>
-          <p class="card-text">Karm Abati is the CEO of Best Cars dealership. He has over 10 years of experience in the automotive industry</p>
-          <p>karmabati@example.com</p>
+            <p class="title">John Doe</p>
+            <b><p>Software Engineer</p></b>
+            <p class="card-text">John is a passionate software engineer with a knack for problem-solving. He loves diving into complex algorithms and crafting elegant solutions.</p>
+            <p><b>Contact Email:</b> john.doe@example.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="{% static 'K.Abati.Up.png' %}" alt="Card image">
+        <img class="card-img-top" src="/static/person2.png" alt="Card image">
         <div class="card-body">
-          <p class="title">Styner Abati</p>
-          <p>COO</p>
-          <p class="card-text">Styner Abati is the COO of Best Cars dealership. She has a strong background in operations and logistics.</p>
-          <p>stynerabati@example.com</p>
+            <p class="title">Alice Smith</p>
+            <b><p>Data Scientist</p></b>
+            <p class="card-text">Alice is a data scientist who thrives on extracting insights from messy datasets. She's dedicated to leveraging data to drive informed decisions.</p>
+            <p><b>Contact Email:</b> alice.smith@example.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="{% static 'Mary.png' %}" alt="Card image">
+        <img class="card-img-top" src="/static/person3.png" alt="Card image">
         <div class="card-body">
-          <p class="title">Mary Abati</p>
-          <p>CFO</p>
-          <p class="card-text">Mary Abati is the CFO of Best Cars dealership. She has a strong background in operations and logistics.</p>
-          <p>maryabati@example.com</p>
+            <p class="title">Michael Johnson</p>
+            <b><p class="bold">Graphic Designer</p></b>
+            <p class="card-text">Michael is a creative graphic designer who transforms ideas into visually stunning designs. He has a keen eye for detail and a passion for storytelling through design.</p>
+            <p><b>Contact Email:</b> michael.johnson@example.com</p>
         </div>
       </div>
     </div>
     </div>
     </div>
-    
 </div>
-
 </html>

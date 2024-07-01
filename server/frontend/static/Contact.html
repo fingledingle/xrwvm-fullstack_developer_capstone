@@ -1,87 +1,57 @@
-{% load static %}
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Us</title>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
-    <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: auto;
-            width: 80%; /* Set width to 80% of the viewport width */
-            min-height: 400px; /* Set a minimum height */
-            padding: 20px;
-            box-sizing: border-box;
-            border: 1px solid #000;
-            border-radius: 20px;
-        }
-        .top {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-        }
-        .bottom {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-        }
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 20px;
-            border-left: 3px solid black;
-        }
-        .top-image, .left-image {
-            width: 100%;
-            height: auto;
-            border-radius: 20px; /* Add rounded corners to the images */
-        }
-        .card {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 45%;
-            padding: 20px;
-        }
-        .card p, .card strong {
-            margin: 10px 0;
-        }
-    </style>
 </head>
-<body>
-    <!-- Your navigation bar here -->
-
-    <div class="container">
-        <div class="top" name="contact-header">
-            <h1>Contact Us</h1>
-            <p>Get in touch with Best Cars dealership. We're here to help!</p>
-            <img src="{% static 'cars.jpeg' %}" alt="Cars" class="top-image">
-        </div>
-        <div class="bottom">
-            <div class="card">
-                <img src="{% static 'contactus.png' %}" alt="Contact Us" class="left-image">
-            </div>
-            <div class="card contact-info">
-                <strong><p>Contact Customer Service</p></strong>
-                <p>support@bestcars.com</p>
-                <strong><p>Contact our National Advertising team</p></strong>
-                <p>NationalSales@bestcars.com</p>
-                <strong><p>Contact our Public Relations team</p></strong>
-                <p>PR@bestcars.com</p>
-                <strong><p>Contact the bestcars.com offices</p></strong>
-                <p>312-611-1111</p>
-                <strong><p>Become a bestcars.com car dealer</p></strong>
-                <p>Visit growwithbestcars.com</p>
-            </div>
-        </div>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:mediumspringgreen; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</body>
+  </nav>
+  
+    <div class="card-contact">
+      <div class="contact-image">
+        <img class="img-contact" src="/static/cars.jpeg" alt="Card image">
+      </div>
+
+      <div class="contact-container">
+      <div class="card-contact-bottom card-contact-border">
+        <img class="internal-contact-image" src="/static/contactus.png" alt="Card image">
+      </div>
+      <div class="card-contact-bottom">
+        <div class="card-body text-center custom-color">
+            <b>Contact Customer Service</b><br>
+            support@bestcars.com<br><br>
+            <b>Contact our National Advertising team</b><br>
+            nationalsales@bestcars.com<br><br>
+            <b>Contact our Public Relations team</b><br>
+            pr@bestcars.com<br><br>
+            <b>Contact the bestcars.com offices</b><br>
+            312-612-5555<br><br>
+            <b>Become a bestcars.com car dealer</b><br>
+            <b>Visit growwithbestcars.com</b>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+</div>
 </html>
